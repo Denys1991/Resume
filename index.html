@@ -13,49 +13,215 @@
     <div class="sidebar">
         <nav class="nav_menu">
             <div class="menu_wrapper"><div class="menu_icon menu_icon-sidebar"><span></span></div></div>
-            <li> <a href="">Home</a> </li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a data-goto="#home" href="#">Home</a> </li>
+            <li><a data-goto="#about" href="#">About me</a></li>
+            <li><a data-goto="#skills" href="#">Skills</a></li>
+            <li><a data-goto="#contacts" href="#">Contacts</a></li>
         </nav>
     </div>
-    <div class="overlay"></div>
-    <div class="wrapper">
-        <header class="header">
+    <div class="overlay"></div> 
+    <header class="header">
+        <div class="wrapper">
             <nav class="navigation">
                     <h1 class="name">Tsyba Denys</h1>
-                    <li> <a href="">Home</a> </li>
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a data-goto="#home" href="#">Home</a> </li>
+                    <li><a data-goto="#about" href="#">About me</a></li>
+                    <li><a data-goto="#skills" href="#">Skills</a></li>
+                    <li><a data-goto="#contacts" href="#">Contacts</a></li>
                     <div class="menu_icon menu_icon-main"><span></span></div>
             </nav>
             <div class="border"></div>
-        </header>
-        <main class="main">
-            <section class="home">
-                <div class="home_content">
-                    <div class="home_img">
-                        <img src="assets/image/IMGz0435zz.jpg" alt="Foto">
-                    </div>
-                    <div class="home_content-p">
-                        <h1 class="home_content-name">Tsyba Denys</h1>
-                        <p class="home_content-text">
-                            Trainee Front-End Development <br>30 years old, Poltava
-                        </p>
+        </div>
+    </header>
+    <main class="main">
+        <section id="home">
+            <div class="wrapper">
+                <div class="home">
+                    <div class="home_content">
+                        <div class="home_img">
+                            <img src="assets/image/IMGz0435zz.jpg" alt="Foto">
+                        </div>
+                        <div class="home_content-p">
+                            <h1 class="home_content-name">Tsyba Denys</h1>
+                            <p class="home_content-text">
+                                Trainee Front-End Development <br>30 years old, Poltava
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="about">                
-                <h4 class="about_title">About me</h4>
-                <div class="about_text">
-                    <p>Hi, I'm Denis – Trainee Front-End Development. <br> I'm interested in Front-End and everything connected with it</p>
-                    <p>I'm has successfully completed the courses "Front-End Development"<br> in Beetroot Academy.</p>
-                    <p>Ready to implement excellent projects <br>with wonderful people.</p>
+            </div>
+        </section>
+        <section id="about">  
+            <div class="wrapper"> 
+                <div class="about">           
+                    <h4 class="title">About me</h4>
+                    <div class="about_text">
+                        <p>Hi, I'm Denis – Trainee Front-End Development. <br> I'm interested in Front-End and everything connected with it</p>
+                        <p>I'm has successfully completed the courses "Front-End Development"<br> in Beetroot Academy.</p>
+                        <p>Ready to implement excellent projects <br>with wonderful people.</p>
+                    </div>
+                </div>     
+            </div> 
+        </section>
+        <section id="skills">
+            <div class="wrapper">
+                <div class="skills">
+                    <h4 class="title">Skills</h4>
+                    <p class="skills_text">I work in such programs as</p>
+                    <ul class="skills_link">
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/HTML.png" alt="icon HTML">
+                            </div>
+                            <p class="link_name">HTML/CSS</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-HTML" type="radio" class="simple_rating-item" checked name="simple_rating-HTML" value="5">
+                                    <label for="simple_rating5-HTML" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-HTML" type="radio" class="simple_rating-item" name="simple_rating-HTML" value="4">
+                                    <label for="simple_rating4-HTML" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-HTML" type="radio" class="simple_rating-item" name="simple_rating-HTML" value="3">
+                                    <label for="simple_rating3-HTML" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-HTML" type="radio" class="simple_rating-item" name="simple_rating-HTML" value="2">
+                                    <label for="simple_rating2-HTML" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-HTML" type="radio" class="simple_rating-item" name="simple_rating-HTML" value="1">
+                                    <label for="simple_rating1-HTML" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/js.png" alt="icon JS">
+                            </div>
+                            <p class="link_name">JS</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-JS" type="radio" class="simple_rating-item"  name="simple_rating-JS" value="5">
+                                    <label for="simple_rating5-JS" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-JS" type="radio" class="simple_rating-item" name="simple_rating-JS" value="4">
+                                    <label for="simple_rating4-JS" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-JS" type="radio" class="simple_rating-item" checked name="simple_rating-JS" value="3">
+                                    <label for="simple_rating3-JS" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-JS" type="radio" class="simple_rating-item" name="simple_rating-JS" value="2">
+                                    <label for="simple_rating2-JS" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-JS" type="radio" class="simple_rating-item" name="simple_rating-JS" value="1">
+                                    <label for="simple_rating1-JS" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/vue.png" alt="icon VUE">
+                            </div>
+                            <p class="link_name">VUE JS</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-VUE" type="radio" class="simple_rating-item"  name="simple_rating-VUE" value="5">
+                                    <label for="simple_rating5-VUE" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-VUE" type="radio" class="simple_rating-item" name="simple_rating-VUE" value="4">
+                                    <label for="simple_rating4-VUE" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-VUE" type="radio" class="simple_rating-item" name="simple_rating-VUE" value="3">
+                                    <label for="simple_rating3-VUE" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-VUE" type="radio" class="simple_rating-item" checked name="simple_rating-VUE" value="2">
+                                    <label for="simple_rating2-VUE" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-VUE" type="radio" class="simple_rating-item" name="simple_rating-VUE" value="1">
+                                    <label for="simple_rating1-VUE" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/git.png" alt="icon GIT">
+                            </div>
+                            <p class="link_name">GIT</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-GIT" type="radio" class="simple_rating-item"  name="simple_rating-GIT" value="5">
+                                    <label for="simple_rating5-GIT" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-GIT" type="radio" class="simple_rating-item" checked name="simple_rating-GIT" value="4">
+                                    <label for="simple_rating4-GIT" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-GIT" type="radio" class="simple_rating-item" name="simple_rating-GIT" value="3">
+                                    <label for="simple_rating3-GIT" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-GIT" type="radio" class="simple_rating-item" name="simple_rating-GIT" value="2">
+                                    <label for="simple_rating2-GIT" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-GIT" type="radio" class="simple_rating-item" name="simple_rating-GIT" value="1">
+                                    <label for="simple_rating1-GIT" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/bootstrap.png" alt="icon BS">
+                            </div>
+                            <p class="link_name">Bootstrap</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-BS" type="radio" class="simple_rating-item"  name="simple_rating-BS" value="5">
+                                    <label for="simple_rating5-BS" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-BS" type="radio" class="simple_rating-item" name="simple_rating-BS" value="4">
+                                    <label for="simple_rating4-BS" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-BS" type="radio" class="simple_rating-item" name="simple_rating-BS" value="3">
+                                    <label for="simple_rating3-BS" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-BS" type="radio" class="simple_rating-item" checked name="simple_rating-BS" value="2">
+                                    <label for="simple_rating2-BS" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-BS" type="radio" class="simple_rating-item" name="simple_rating-BS" value="1">
+                                    <label for="simple_rating1-BS" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link_foto">
+                                <img src="assets/image/wp.png" alt="icon WP">
+                            </div>
+                            <p class="link_name">WordPress</p>
+                            <div class="simple_rating">
+                                <div class="simple_rating-items">
+                                    <input id="simple_rating5-WP" type="radio" class="simple_rating-item"  name="simple_rating-WP" value="5">
+                                    <label for="simple_rating5-WP" class="simple_rating-label"></label>
+                                    <input id="simple_rating4-WP" type="radio" class="simple_rating-item" name="simple_rating-WP" value="4">
+                                    <label for="simple_rating4-WP" class="simple_rating-label"></label>
+                                    <input id="simple_rating3-WP" type="radio" class="simple_rating-item" name="simple_rating-WP" value="3">
+                                    <label for="simple_rating3-WP" class="simple_rating-label"></label>
+                                    <input id="simple_rating2-WP" type="radio" class="simple_rating-item" checked name="simple_rating-WP" value="2">
+                                    <label for="simple_rating2-WP" class="simple_rating-label"></label>
+                                    <input id="simple_rating1-WP" type="radio" class="simple_rating-item" name="simple_rating-WP" value="1">
+                                    <label for="simple_rating1-WP" class="simple_rating-label"></label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="wrapper">
+                <div class="contacts">
+                    <h4 class="title">Contacts</h4>
+                    <p> Want to know more or just chat? <br>
+                        You are welcome! 
+                    </p>
+                    <div class="soc">
+                        <div class="soc_link">
+                            <a href="https://www.facebook.com/profile.php?id=100014076690503" title="facebook" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/image/facebook.png" alt="facebook icon">
+                            </a>
+                        </div>
+                        <div class="soc_link">
+                            <a href="https://www.instagram.com/tsibadenis/" title="instgram" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/image/inst.png" alt="instagram icon">
+                            </a>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:pl051191tda@gmail.com">
+                                <img src="assets/image/gmail.png" alt="gmail icon">
+                            </a>
+                        </div>   
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <script src="assets/js/js.prod.js"></script>
 </body>
 </html>

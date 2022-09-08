@@ -19,3 +19,27 @@ overlay.addEventListener('click', function(){
     body.classList.remove('lock')
     overlay.classList.remove('activate')
 })
+
+
+
+const menuLinks = document.querySelectorAll('a[data-goto]');
+menuLinks.forEach(menuLink=>{
+    menuLink.addEventListener('click', menuLinkClick);
+})
+function menuLinkClick(param) {
+    const menulink = param.target;
+    if(menulink.dataset.goto && document.querySelector(menulink.dataset.goto)){
+        const gotoBlock = document.querySelector(menulink.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+        if(menuSidebar.classList.contains('_active')){
+            menuSidebar.classList.remove('_active')
+            body.classList.remove('lock')
+            overlay.classList.remove('activate')
+        };
+        window.scrollTo({
+            top:gotoBlockValue,
+            behavior: "smooth"
+        });
+        param.preventDefault();
+    }
+}
