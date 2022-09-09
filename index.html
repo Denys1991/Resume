@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="assets/fonts/fonts.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" id="theme">
     <link rel="stylesheet" href="assets/css/media.min.css">
 </head>
 <body>
     <div class="sidebar">
         <nav class="nav_menu">
             <div class="menu_wrapper"><div class="menu_icon menu_icon-sidebar"><span></span></div></div>
-            <li><a data-goto="#home" href="#">Home</a> </li>
-            <li><a data-goto="#about" href="#">About me</a></li>
-            <li><a data-goto="#skills" href="#">Skills</a></li>
-            <li><a data-goto="#contacts" href="#">Contacts</a></li>
+            <li><a data-goto="#home" href="#home">Home</a> </li>
+            <li><a data-goto="#about" href="#about">About me</a></li>
+            <li><a data-goto="#skills" href="#skills">Skills</a></li>
+            <li><a data-goto="#contacts" href="#contacts">Contacts</a></li>
         </nav>
     </div>
     <div class="overlay"></div> 
@@ -24,11 +24,13 @@
         <div class="wrapper">
             <nav class="navigation">
                     <h1 class="name">Tsyba Denys</h1>
-                    <li><a data-goto="#home" href="#">Home</a> </li>
-                    <li><a data-goto="#about" href="#">About me</a></li>
-                    <li><a data-goto="#skills" href="#">Skills</a></li>
-                    <li><a data-goto="#contacts" href="#">Contacts</a></li>
+                    <li><a data-goto="#home"  href="#home">Home</a> </li>
+                    <li><a data-goto="#about" href="#about">About me</a></li>
+                    <li><a data-goto="#skills" href="#skills">Skills</a></li>
+                    <li><a data-goto="#contacts" href="#contacts">Contacts</a></li>
+                    <button id="light_night"></button>
                     <div class="menu_icon menu_icon-main"><span></span></div>
+                    
             </nav>
             <div class="border"></div>
         </div>

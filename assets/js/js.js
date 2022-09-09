@@ -26,8 +26,11 @@ const menuLinks = document.querySelectorAll('a[data-goto]');
 menuLinks.forEach(menuLink=>{
     menuLink.addEventListener('click', menuLinkClick);
 })
+
 function menuLinkClick(param) {
+    console.log(param)
     const menulink = param.target;
+    console.log(menulink)
     if(menulink.dataset.goto && document.querySelector(menulink.dataset.goto)){
         const gotoBlock = document.querySelector(menulink.dataset.goto);
         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
@@ -41,5 +44,15 @@ function menuLinkClick(param) {
             behavior: "smooth"
         });
         param.preventDefault();
+    }
+}
+
+let switchMode = document.getElementById('light_night');
+switchMode.onclick = function(){
+    let theme = document.getElementById('theme');
+    if (theme.getAttribute('href') == 'assets/css/style.min.css'){
+        theme.href = 'assets/css/dark_theme.min.css'
+    } else {
+        theme.href = 'assets/css/style.min.css'
     }
 }
